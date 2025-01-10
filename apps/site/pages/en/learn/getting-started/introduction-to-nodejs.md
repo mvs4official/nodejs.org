@@ -25,10 +25,10 @@ In Node.js the new ECMAScript standards can be used without problems, as you don
 The most common example Hello World of Node.js is a web server:
 
 ```cjs
-const { createServer } = require('node:http');
+const { createServer } = require('node:http');// creates server to run
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const hostname = '127.0.0.1'; // set hostname
+const port = 3000; // set port
 
 const server = createServer((req, res) => {
   res.statusCode = 200;
